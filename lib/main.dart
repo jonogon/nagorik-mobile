@@ -23,8 +23,21 @@ class MyApp extends ConsumerWidget {
             onSecondary: Color(0xFFFFFFFF),
             onSecondaryContainer: Color(0xFFC4CAC8),
           ),
+          appBarTheme: const AppBarTheme(
+            backgroundColor: Color(0x0A172B24),
+            elevation: 0,
+            iconTheme: IconThemeData(
+              color: Color(0xFF172B24),
+            ),
+            titleTextStyle: TextStyle(
+              color: Color(0xFF172B24),
+              fontSize: 20,
+              fontWeight: FontWeight.w500,
+            ),
+          ),
           bottomNavigationBarTheme: const BottomNavigationBarThemeData(
-            backgroundColor: Color(0xFFFFFFFF),
+            elevation: 0,
+            backgroundColor: Color(0x0A172B24),
             selectedItemColor: Color(0xFF172B24),
             unselectedItemColor: Color(0xFFC4CAC8),
             type: BottomNavigationBarType.fixed,

@@ -17,6 +17,9 @@ class $AssetsIconsGen {
 
   /// Directory path: assets/icons/nav_bar
   $AssetsIconsNavBarGen get navBar => const $AssetsIconsNavBarGen();
+
+  /// Directory path: assets/icons/reactions
+  $AssetsIconsReactionsGen get reactions => const $AssetsIconsReactionsGen();
 }
 
 class $AssetsLogoGen {
@@ -80,6 +83,33 @@ class $AssetsIconsNavBarGen {
         user,
         userFilled
       ];
+}
+
+class $AssetsIconsReactionsGen {
+  const $AssetsIconsReactionsGen();
+
+  /// File path: assets/icons/reactions/comment.svg
+  SvgGenImage get comment =>
+      const SvgGenImage('assets/icons/reactions/comment.svg');
+
+  /// File path: assets/icons/reactions/comment_filled.svg
+  SvgGenImage get commentFilled =>
+      const SvgGenImage('assets/icons/reactions/comment_filled.svg');
+
+  /// File path: assets/icons/reactions/like.svg
+  SvgGenImage get like => const SvgGenImage('assets/icons/reactions/like.svg');
+
+  /// File path: assets/icons/reactions/like_filled.svg
+  SvgGenImage get likeFilled =>
+      const SvgGenImage('assets/icons/reactions/like_filled.svg');
+
+  /// File path: assets/icons/reactions/share.svg
+  SvgGenImage get share =>
+      const SvgGenImage('assets/icons/reactions/share.svg');
+
+  /// List of all assets
+  List<SvgGenImage> get values =>
+      [comment, commentFilled, like, likeFilled, share];
 }
 
 class Assets {
