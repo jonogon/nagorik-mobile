@@ -15,6 +15,9 @@ import 'package:vector_graphics/vector_graphics.dart' as _vg;
 class $AssetsIconsGen {
   const $AssetsIconsGen();
 
+  /// Directory path: assets/icons/create
+  $AssetsIconsCreateGen get create => const $AssetsIconsCreateGen();
+
   /// Directory path: assets/icons/nav_bar
   $AssetsIconsNavBarGen get navBar => const $AssetsIconsNavBarGen();
 
@@ -30,6 +33,25 @@ class $AssetsLogoGen {
 
   /// List of all assets
   List<SvgGenImage> get values => [logo];
+}
+
+class $AssetsIconsCreateGen {
+  const $AssetsIconsCreateGen();
+
+  /// File path: assets/icons/create/camera.svg
+  SvgGenImage get camera => const SvgGenImage('assets/icons/create/camera.svg');
+
+  /// File path: assets/icons/create/image.svg
+  SvgGenImage get image => const SvgGenImage('assets/icons/create/image.svg');
+
+  /// File path: assets/icons/create/map.svg
+  SvgGenImage get map => const SvgGenImage('assets/icons/create/map.svg');
+
+  /// File path: assets/icons/create/video.svg
+  SvgGenImage get video => const SvgGenImage('assets/icons/create/video.svg');
+
+  /// List of all assets
+  List<SvgGenImage> get values => [camera, image, map, video];
 }
 
 class $AssetsIconsNavBarGen {
