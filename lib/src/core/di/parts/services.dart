@@ -7,3 +7,10 @@ RestClientKit network(NetworkRef ref) {
     onUnAuthorizedError: () {},
   );
 }
+
+@Riverpod(keepAlive: true)
+CacheService cacheService(CacheServiceRef ref) {
+  return SharedPreferencesService(
+    ref.read(sharedPreferencesProvider).requireValue,
+  );
+}

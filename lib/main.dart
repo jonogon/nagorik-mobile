@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-
-import 'src/core/services/navigation/route_configuration.dart';
+import 'package:nagorik_mobile/src/core/services/navigation/router.dart';
 
 void main() {
   runApp(const ProviderScope(child: MyApp()));
@@ -73,7 +72,7 @@ class MyApp extends ConsumerWidget {
               ),
               // suffixIconColor: color.suffixIcon,
             )),
-        routerConfig: ref.read(routerProvider),
+        routerConfig: ref.read(goRouterProvider),
       ),
     );
   }

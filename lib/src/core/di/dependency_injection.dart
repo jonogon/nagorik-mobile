@@ -1,9 +1,11 @@
 import 'package:rest_client_kit/rest_client_kit.dart';
 import 'package:riverpod_annotation/riverpod_annotation.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
 import '../../feature/authentication/data/data_sources/authentication_data_source.dart';
 import '../../feature/authentication/data/repositories/authentication_repository_impl.dart';
 import '../../feature/authentication/domain/use_cases/authentication_use_cases.dart';
+import '../services/cache/cache_service.dart';
 import '../services/network/endpoints.dart';
 
 part 'dependency_injection.g.dart';

@@ -1,4 +1,4 @@
-part of '../route_configuration.dart';
+part of '../router.dart';
 
 List<GoRoute> _authenticationRoutes = [
   GoRoute(
