@@ -12,6 +12,13 @@ import 'package:flutter/widgets.dart';
 import 'package:flutter_svg/flutter_svg.dart' as _svg;
 import 'package:vector_graphics/vector_graphics.dart' as _vg;
 
+class $AssetsIconsGen {
+  const $AssetsIconsGen();
+
+  /// Directory path: assets/icons/nav_bar
+  $AssetsIconsNavBarGen get navBar => const $AssetsIconsNavBarGen();
+}
+
 class $AssetsLogoGen {
   const $AssetsLogoGen();
 
@@ -22,9 +29,63 @@ class $AssetsLogoGen {
   List<SvgGenImage> get values => [logo];
 }
 
+class $AssetsIconsNavBarGen {
+  const $AssetsIconsNavBarGen();
+
+  /// File path: assets/icons/nav_bar/add.svg
+  SvgGenImage get add => const SvgGenImage('assets/icons/nav_bar/add.svg');
+
+  /// File path: assets/icons/nav_bar/add_filled.svg
+  SvgGenImage get addFilled =>
+      const SvgGenImage('assets/icons/nav_bar/add_filled.svg');
+
+  /// File path: assets/icons/nav_bar/bell.svg
+  SvgGenImage get bell => const SvgGenImage('assets/icons/nav_bar/bell.svg');
+
+  /// File path: assets/icons/nav_bar/bell_filled.svg
+  SvgGenImage get bellFilled =>
+      const SvgGenImage('assets/icons/nav_bar/bell_filled.svg');
+
+  /// File path: assets/icons/nav_bar/home.svg
+  SvgGenImage get home => const SvgGenImage('assets/icons/nav_bar/home.svg');
+
+  /// File path: assets/icons/nav_bar/home_filled.svg
+  SvgGenImage get homeFilled =>
+      const SvgGenImage('assets/icons/nav_bar/home_filled.svg');
+
+  /// File path: assets/icons/nav_bar/map.svg
+  SvgGenImage get map => const SvgGenImage('assets/icons/nav_bar/map.svg');
+
+  /// File path: assets/icons/nav_bar/map_filled.svg
+  SvgGenImage get mapFilled =>
+      const SvgGenImage('assets/icons/nav_bar/map_filled.svg');
+
+  /// File path: assets/icons/nav_bar/user.svg
+  SvgGenImage get user => const SvgGenImage('assets/icons/nav_bar/user.svg');
+
+  /// File path: assets/icons/nav_bar/user_filled.svg
+  SvgGenImage get userFilled =>
+      const SvgGenImage('assets/icons/nav_bar/user_filled.svg');
+
+  /// List of all assets
+  List<SvgGenImage> get values => [
+        add,
+        addFilled,
+        bell,
+        bellFilled,
+        home,
+        homeFilled,
+        map,
+        mapFilled,
+        user,
+        userFilled
+      ];
+}
+
 class Assets {
   Assets._();
 
+  static const $AssetsIconsGen icons = $AssetsIconsGen();
   static const $AssetsLogoGen logo = $AssetsLogoGen();
 }
 

@@ -33,6 +33,6 @@ class RouterState extends _$RouterState {
       return;
     }
 
-    state = isLoggedIn ? Routes.dashboard : Routes.login;
+    state = isLoggedIn ? Routes.home : Routes.login;
   }
 }
