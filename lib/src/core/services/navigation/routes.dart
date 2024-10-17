@@ -9,4 +9,6 @@ class Routes {
   static const String add = '/add';
   static const String news = '/news';
   static const String profile = '/profile';
+
+  static const String postDetails = '/postDetails';
 }

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../../shared/widget/event_card.dart';
+import '../../shared/widget/post_card.dart';
 
 class HomeTab extends StatelessWidget {
   const HomeTab({super.key});
@@ -15,7 +15,7 @@ class HomeTab extends StatelessWidget {
           child: ListView.builder(
             itemCount: 10,
             itemBuilder: (context, index) {
-              return const EventCard();
+              return const PostCard();
             },
           ),
         ),

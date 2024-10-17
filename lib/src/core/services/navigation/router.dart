@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:nagorik_mobile/src/core/services/navigation/router_state/router_state_provider.dart';
 import 'package:nagorik_mobile/src/feature/add/presentation/tab/view/add_tab.dart';
+import 'package:nagorik_mobile/src/feature/home/presentation/details/view/post_details_screen.dart';
 import 'package:nagorik_mobile/src/feature/map/presentation/tab/view/map_tab.dart';
 import 'package:nagorik_mobile/src/feature/news/presentation/tab/view/news_tab.dart';
 import 'package:nagorik_mobile/src/feature/profile/presentation/tab/view/profile_tab.dart';
@@ -55,6 +56,13 @@ GoRouter goRouter(GoRouterRef ref) {
       ..._onboardingRoutes,
       ..._authenticationRoutes,
       ..._navBarRoutes,
+      GoRoute(
+        path: Routes.postDetails,
+        name: Routes.postDetails,
+        pageBuilder: (context, state) {
+          return const MaterialPage(child: PostDetailsScreen());
+        },
+      )
     ],
   );
 }
