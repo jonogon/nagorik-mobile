@@ -16,19 +16,16 @@ class _MapTabState extends State<MapTab> {
   ); //CameraPosition object for initial location in map
   MapLibreMapController? mController;
 
-  static const styleId = 'osm-liberty'; //barikoi map style id
-  var apiKey;
+  String mapUrl = '';
 
   @override
   void initState() {
     super.initState();
-    apiKey = dotenv.env['BARIKOI_API_KEY'];
+    mapUrl = dotenv.env['MAP_API']!;
   }
 
   @override
   Widget build(BuildContext context) {
-    var mapUrl =
-        'https://map.barikoi.com/styles/$styleId/style.json?key=$apiKey';
     return Scaffold(
       body: MapLibreMap(
         initialCameraPosition: initialPosition,
