@@ -1,10 +1,16 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:nagorik_mobile/src/core/config/env_config.dart';
 import 'package:nagorik_mobile/src/core/services/navigation/router.dart';
+import 'package:nagorik_mobile/src/core/utils/env_validators.dart';
 
 Future<void> main() async {
-  await dotenv.load(fileName: ".env");
+  // Load environment variables
+  await EnvConfig.load();
+
+  // Validate required environment variables
+  EnvValidator.validateMapConfiguration();
+
   runApp(const ProviderScope(child: MyApp()));
 }
 
