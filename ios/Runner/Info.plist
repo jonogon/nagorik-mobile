@@ -45,5 +45,7 @@
 	<true/>
 	<key>UIApplicationSupportsIndirectInputEvents</key>
 	<true/>
+	<key>NSLocationWhenInUseUsageDescription</key>
+    <string>Nagorik Mobile needs access to your location in order to provide you with the best experience.</string>
 </dict>
 </plist>
